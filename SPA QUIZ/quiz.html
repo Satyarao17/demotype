@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <title>quiz login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+        body{
+            background-color:lightsteelblue;
+            
+        }
+        .card {background-color:lightcyan;
+         box-shadow: 0 0 8px 3px #f84;
+         border-radius: 20px;
+        }
+        </style>
+</head>
+
+
+
+<body>
+        <div class="card bg-info text-white">
+    <div class="card-body"><h1>User Login</h1></div>
+  </div>
+   <center>
+       <div class="card" style="width: 30rem;" >
+  <div class="card-body">
+       <table class="table">
+           <form name="login">
+    <thead>
+  <tr>
+      <th  style="text-align:left"><h2>User Name</h2></th>
+      <td><input type="text" name="uname" placeholder="Enter Username" id="uname"></td></br>
+  </tr>
+  </thead>
+  <tr>
+      <thead>
+      <th  style="text-align:left"><h2>Password</h2></th>
+      <td><input type="password" name="upassword" placeholder="Enter Password" id="upassword"></td></br>
+ </tr>
+ </thead>
+<tr>
+<td><button type="button" class="btn btn-success" onclick="check(this.form)">Login</button></td>
+<td><input type="reset" class="btn btn-danger" value="Cancel"/></td>
+</tr>
+
+
+<script language="javascript">
+function check(form)
+{
+ 
+ if(form.uname.value == "admin" && form.upassword.value == "admin")
+  {
+    window.location='quiz1.html';
+  }
+ else
+ {
+   alert("Error Password or Username");
+  }
+}
+</script>
+</table>
+</center>
+      </body>
+      </html>
